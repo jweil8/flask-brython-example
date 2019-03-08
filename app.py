@@ -15,7 +15,7 @@ app = Flask(__name__, static_url_path="")
 def index():
     """Return the main page."""
     page_title = random.choice('Hi', 'Bears', 'Bulls', 'Hawks', 'Buckets')
-    return render_template('index.html')
+    return render_template('index.html', page_title)
 
 
 @app.route('/predict', methods=['GET', 'POST'])
