@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>{{"page_title"}}</title>
+		<title>{{page_title}}</title>
 		<script type="text/javascript" src="brython.js"></script>
 		<script type="text/javascript" src="brython_stdlib.js"></script>
 	</head>
@@ -26,9 +26,9 @@
           req.send(data)
 
       document["predict_button"].bind("click", get_prediction)
-		</script>
+        </script>
+        <h1>{{page_title}}</h1>
     <textarea id="user_input"></textarea>
-        <h1>{{"page_title"}}</h1>
 		<button id="predict_button">Predict!</button>
 		<div id="result"></div>
 	</body>
