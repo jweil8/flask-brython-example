@@ -14,6 +14,7 @@ app = Flask(__name__, static_url_path="")
 @app.route('/')
 def index():
     """Return the main page."""
+    page_title = random.choice('Hi', 'Bears', 'Bulls', 'Hawks', 'Buckets')
     return render_template('index.html')
 
 
